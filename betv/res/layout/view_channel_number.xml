@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="140dp"
+	android:layout_height="60dp">
+    
+    <TextView 
+        android:id="@+id/id_channel_number"
+ 		android:layout_width="140dp"
+ 		android:layout_height="60dp"
+ 		android:textSize="@dimen/font_32"
+ 		android:textColor="@color/white"
+ 		android:gravity="center"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:visibility="visible"
+ 		android:text=""/>
+    <!-- android:background="@drawable/live_number_bg" -->
+
+</RelativeLayout>
+

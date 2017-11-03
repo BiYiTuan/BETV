@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="155dp" 
+    android:layout_height="214dp">
+    
+    <ImageView 
+        android:id="@+id/id_voditem_icon"
+        android:layout_width="155dp" 
+    	android:layout_height="214dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/vod_d"
+        android:visibility="visible"
+        android:contentDescription="@string/app_name"/>
+    
+    <RelativeLayout
+        android:id="@+id/id_voditem_name_r"
+        android:layout_width="155dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="176dp"
+        android:background="@drawable/vod_b">
+        
+        <TextView 
+        	android:id="@+id/id_voditem_name"
+ 			android:layout_width="155dp"
+ 			android:layout_height="38dp"
+ 			android:layout_marginLeft="0dp"
+ 			android:layout_marginTop="0dp"
+ 			android:paddingLeft="2dp"
+ 			android:paddingRight="2dp"
+ 			android:gravity="center"
+ 			android:textSize="@dimen/font_20"
+ 			android:textColor="@color/white"
+ 			android:singleLine="true"
+ 			android:ellipsize="marquee"
+ 			android:marqueeRepeatLimit="marquee_forever"
+ 			android:visibility="visible"
+ 			android:text=""/>
+        
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/id_voditem_update"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="0dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="5dp"
+        android:gravity="right|center_vertical"
+		android:textSize="@dimen/font_14"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+        android:background="@drawable/vod_u"
+        android:visibility="invisible"
+        android:text=""/>
+
+</RelativeLayout>
+

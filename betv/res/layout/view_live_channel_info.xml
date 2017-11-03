@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1068dp" 
+    android:layout_height="126dp"
+    android:background="@drawable/view_volume_bg">
+    
+    <RelativeLayout
+        android:id="@+id/id_live_channel_info"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center_vertical">
+        
+        <TextView 
+       		android:id="@+id/id_live_channel_number"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="56dp"
+ 			android:layout_marginLeft="0dp"
+ 			android:textSize="@dimen/font_26"
+ 			android:textColor="@color/white"
+ 			android:gravity="left|center_vertical"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="visible"
+ 			android:text=""/>
+        
+        <TextView 
+       		android:id="@+id/id_live_channel_name"
+ 			android:layout_width="780dp"
+ 			android:layout_height="56dp"
+ 			android:layout_toRightOf="@+id/id_live_channel_number"
+ 			android:layout_alignTop="@+id/id_live_channel_number"
+ 			android:layout_alignBottom="@+id/id_live_channel_number"
+ 			android:layout_marginLeft="10dp"
+ 			android:textSize="@dimen/font_26"
+ 			android:textColor="@color/white"
+ 			android:gravity="left|center_vertical"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="visible"
+ 			android:text=""/>
+        
+        <TextView 
+       		android:id="@+id/id_live_channel_speed"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="56dp"
+ 			android:layout_toRightOf="@+id/id_live_channel_name"
+ 			android:layout_alignTop="@+id/id_live_channel_name"
+ 			android:layout_alignBottom="@+id/id_live_channel_name"
+ 			android:layout_marginLeft="20dp"
+ 			android:gravity="left|center_vertical"
+ 			android:textSize="@dimen/font_18"
+ 			android:textColor="@color/white"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="visible"
+ 			android:text=""/>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/id_live_channel_preview_info"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/id_live_channel_info"
+        android:layout_alignLeft="@+id/id_live_channel_info"
+        android:layout_marginTop="0dp">
+        
+        <ImageView 
+        	android:id="@+id/id_live_channel_icon"
+        	android:layout_width="28dp"
+        	android:layout_height="28dp"
+        	android:layout_marginTop="6dp"
+        	android:layout_marginLeft="0dp"
+        	android:scaleType="fitXY"
+        	android:visibility="visible"
+        	android:src="@drawable/live_play_icon"
+        	android:contentDescription="@string/app_name"/>
+        
+        <TextView 
+       		android:id="@+id/id_live_channel_preview1"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@+id/id_live_channel_icon"
+ 			android:layout_marginTop="7dp"
+ 			android:layout_marginLeft="5dp"
+ 			android:gravity="left"
+ 			android:textSize="@dimen/font_20"
+ 			android:textColor="@color/white"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="visible"
+ 			android:text=""/>
+        
+        <TextView 
+       		android:id="@+id/id_live_channel_preview2"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="wrap_content"
+ 			android:layout_below="@+id/id_live_channel_preview1"
+ 			android:layout_alignLeft="@+id/id_live_channel_preview1"
+ 			android:layout_marginTop="0dp"
+ 			android:layout_marginLeft="0dp"
+ 			android:gravity="left"
+ 			android:textSize="@dimen/font_20"
+ 			android:textColor="@color/dark_white"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="visible"
+ 			android:text=""/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

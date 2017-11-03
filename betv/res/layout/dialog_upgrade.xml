@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="722dp"
+    android:layout_height="370dp"
+    android:background="@drawable/tc_upgrade_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_prompt_info"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:gravity="center"
+            android:text="有新版本啦，是否升级?"
+            android:textColor="#bfc0c1"
+            android:textSize="40dp" />
+        <TextView
+            android:id="@+id/dialog_upgrade_info"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:textColor="#bfc0c1"
+            android:textSize="30dp"
+            android:visibility="invisible"
+             />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal" >
+        
+        <Button
+            android:id="@+id/id_upgrade_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/upgrade_button_select"
+            android:text="立即升级"
+            android:textColor="@drawable/upgrade_button_color"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/id_upgrade_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/upgrade_button_select"
+            android:text="下次再说"
+            android:textColor="@drawable/upgrade_button_color"
+            android:textSize="30dp" />
+        
+    </LinearLayout>
+
+</LinearLayout>

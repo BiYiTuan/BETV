@@ -1,0 +1,75 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="720dp"
+    android:background="@color/transparent" >
+
+    <!-- 播放器 -->
+    <com.szgvtv.ead.app.taijietemplates.ui.view.GVideoView
+        android:id="@+id/id_play_live_videoview"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"> 
+    </com.szgvtv.ead.app.taijietemplates.ui.view.GVideoView>
+        
+    <!-- 加载广告 -->
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LoadingVideo 
+        android:id="@+id/id_play_live_loading"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LoadingVideo>
+    
+    <!-- 直播菜单 -->
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LiveMenu 
+        android:id="@+id/id_play_live_menu"
+		android:layout_width="520dp" 
+    	android:layout_height="635dp"
+		android:layout_marginLeft="52dp"
+ 		android:layout_marginTop="43dp"
+        android:visibility="invisible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LiveMenu>
+    
+    <!-- 直播信息 -->
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LiveChannelInfo 
+        android:id="@+id/id_play_live_info"
+		android:layout_width="1068dp"
+		android:layout_height="126dp"
+		android:layout_marginLeft="106dp"
+        android:layout_marginTop="554dp"
+        android:visibility="invisible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LiveChannelInfo>
+    
+    <!-- 音量进度 -->
+    <com.szgvtv.ead.app.taijietemplates.ui.view.ProgressVolume 
+        android:id="@+id/id_play_live_volume"
+		android:layout_width="1068dp"
+		android:layout_height="126dp"
+		android:layout_marginLeft="106dp"
+        android:layout_marginTop="554dp"
+		android:visibility="invisible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.ProgressVolume> 
+    
+    <!-- 流媒体维护 -->
+    <ImageView
+        android:id="@+id/id_ppp_preserve"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name" />
+    
+    <!-- 数字频道号 -->
+    <com.szgvtv.ead.app.taijietemplates.ui.view.ChannelNumber 
+        android:id="@+id/id_play_live_number"
+		android:layout_width="140dp"
+		android:layout_height="60dp"
+		android:layout_marginLeft="1088dp"
+        android:layout_marginTop="43dp"
+		android:visibility="visible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.ChannelNumber> 
+    
+</RelativeLayout>

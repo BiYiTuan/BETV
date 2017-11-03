@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280dp" 
+    android:layout_height="720dp">
+    
+    <ImageView
+        android:id="@+id/id_startup_image"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/startup_d"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:contentDescription="@string/app_name"/>
+
+</RelativeLayout>
+

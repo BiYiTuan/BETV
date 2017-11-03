@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="1068dp" 
+    android:layout_height="126dp"
+    android:background="@drawable/view_playback_bg">
+    
+    <ImageView
+        android:id="@+id/id_playback_icon"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="37dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:src="@drawable/view_play"
+        android:contentDescription="@string/app_name"/>
+     
+    <RelativeLayout
+        android:id="@+id/id_playback_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="134dp"
+        android:layout_marginTop="15dp">
+        
+        <TextView 
+        	android:id="@+id/id_playback_number"
+ 			android:layout_width="50dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_marginLeft="0dp"
+ 			android:layout_marginTop="0dp"
+ 			android:textSize="@dimen/font_26"
+ 			android:textColor="@color/white"
+ 			android:gravity="left"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:text=""/>
+        
+        <TextView 
+        	android:id="@+id/id_playback_name"
+ 			android:layout_width="175dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@+id/id_playback_number"
+ 			android:layout_marginLeft="10dp"
+ 			android:layout_marginTop="0dp"
+ 			android:textSize="@dimen/font_26"
+ 			android:textColor="@color/white"
+ 			android:gravity="left"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:text=""/>
+        
+        <TextView 
+        	android:id="@+id/id_playback_content"
+ 			android:layout_width="370dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@+id/id_playback_name"
+ 			android:layout_marginLeft="5dp"
+ 			android:layout_marginTop="0dp"
+ 			android:textSize="@dimen/font_26"
+ 			android:textColor="@color/white"
+ 			android:gravity="left"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:text=""/>
+        
+        <TextView 
+        	android:id="@+id/id_playback_date"
+ 			android:layout_width="140dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@+id/id_playback_content"
+ 			android:layout_marginLeft="5dp"
+ 			android:textSize="@dimen/font_26"
+ 			android:textColor="@color/white"
+ 			android:gravity="left"
+ 			android:singleLine="true"
+ 			android:ellipsize="end" 
+ 			android:text=""/>
+        
+        <TextView 
+        	android:id="@+id/id_playback_time"
+ 			android:layout_width="200dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_toRightOf="@+id/id_playback_date"
+ 			android:layout_marginLeft="5dp"
+ 			android:textSize="@dimen/font_26"
+ 			android:textColor="@color/white"
+ 			android:gravity="left"
+ 			android:singleLine="true"
+ 			android:ellipsize="end" 
+ 			android:text=""/>
+        
+    </RelativeLayout>
+    
+    <SeekBar
+        android:id="@+id/id_playback_seekbar"
+        android:layout_width="903dp"  
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_playback_info"
+        android:layout_alignLeft="@+id/id_playback_info"
+        android:layout_marginTop="0dp" 
+        android:maxHeight="14dp"
+        android:minHeight="14dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/selector_seekbar2_bg" 
+        android:thumb="@drawable/selector_seekbar_thumb"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" /> 
+        
+    <TextView 
+        android:id="@+id/id_playback_speed"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_below="@+id/id_playback_seekbar"
+ 		android:layout_marginLeft="560dp"
+        android:layout_marginTop="0dp" 
+ 		android:textSize="@dimen/font_26"
+ 		android:textColor="@color/white"
+ 		android:gravity="left"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:text=""/>
+        
+    <TextView 
+        android:id="@+id/id_playback_current_time"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_below="@+id/id_playback_seekbar"
+        android:layout_alignRight="@+id/id_playback_seekbar"
+        android:layout_marginTop="0dp" 
+ 		android:textSize="@dimen/font_26"
+ 		android:textColor="@color/white"
+ 		android:gravity="left"
+ 		android:singleLine="true"
+ 		android:ellipsize="end" 
+ 		android:text=""/>
+
+</RelativeLayout>

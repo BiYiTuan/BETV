@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="1068dp" 
+    android:layout_height="126dp"
+    android:background="@drawable/view_volume_bg">
+    
+    <TextView 
+        android:id="@+id/id_volume_value"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="56dp"
+ 		android:layout_marginLeft="25dp"
+ 		android:layout_marginTop="0dp"
+ 		android:gravity="left|center_vertical"
+ 		android:textSize="@dimen/font_26"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:visibility="visible"
+ 		android:text="@string/view_volume_value"/>
+    
+    <SeekBar
+        android:id="@+id/id_volume_seekbar"
+        android:layout_width="1026dp"  
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_volume_value"
+        android:layout_alignLeft="@+id/id_volume_value"
+        android:layout_marginLeft="0dp" 
+        android:layout_marginTop="25dp" 
+        android:maxHeight="14dp"
+        android:minHeight="14dp"
+        android:max="100"
+        android:progress="10"
+        android:progressDrawable="@drawable/selector_seekbar_bg" 
+        android:thumb="@drawable/selector_seekbar_thumb"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp" /> 
+
+</RelativeLayout>

@@ -1,0 +1,201 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/drama_bg">
+    
+    <!-- 剧集导航 -->
+    <RelativeLayout
+        android:id="@+id/id_drama_tv_drama_navigation"
+        android:layout_width="1072dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="104dp"
+       	android:layout_marginTop="306dp"
+       	android:visibility="invisible">
+       	
+        <ImageView
+        	android:id="@+id/id_drama_tv_left"
+        	android:layout_width="12dp"
+        	android:layout_height="22dp"
+        	android:layout_marginLeft="0dp"
+        	android:layout_marginTop="12dp"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/direction_left"
+        	android:visibility="invisible"
+        	android:contentDescription="@string/app_name"/> 
+    
+    	<com.szgvtv.ead.app.taijietemplates.ui.view.HorizontalListView 
+        	android:id="@+id/id_drama_tv_hlistview"
+			android:layout_width="1008dp"
+			android:layout_height="46dp"
+			android:layout_toRightOf="@+id/id_drama_tv_left"
+			android:layout_marginLeft="20dp"
+       		android:layout_marginTop="0dp"/>
+    
+    	<ImageView 
+        	android:id="@+id/id_drama_tv_right"
+        	android:layout_width="12dp"
+        	android:layout_height="22dp"
+        	android:layout_toRightOf="@+id/id_drama_tv_hlistview"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginTop="12dp"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/direction_right"
+        	android:visibility="invisible"
+        	android:contentDescription="@string/app_name"/> 
+       	
+    </RelativeLayout>
+    
+    <ImageView  
+        android:id="@+id/id_drama_other_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/focus"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item0"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:nextFocusDown="@+id/id_drama_other_item5"
+        android:nextFocusRight="@+id/id_drama_other_item1"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="348dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item1"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item0"
+        android:layout_alignTop="@+id/id_drama_other_item0"
+        android:nextFocusDown="@+id/id_drama_other_item6"
+        android:nextFocusLeft="@+id/id_drama_other_item0"
+        android:nextFocusRight="@+id/id_drama_other_item2"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item2"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item1"
+        android:layout_alignTop="@+id/id_drama_other_item1"
+        android:nextFocusDown="@+id/id_drama_other_item7"
+        android:nextFocusLeft="@+id/id_drama_other_item1"
+        android:nextFocusRight="@+id/id_drama_other_item3"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item3"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item2"
+        android:layout_alignTop="@+id/id_drama_other_item2"
+        android:nextFocusDown="@+id/id_drama_other_item8"
+        android:nextFocusLeft="@+id/id_drama_other_item2"
+        android:nextFocusRight="@+id/id_drama_other_item4"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item4"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item3"
+        android:layout_alignTop="@+id/id_drama_other_item3"
+        android:nextFocusDown="@+id/id_drama_other_item9"
+        android:nextFocusLeft="@+id/id_drama_other_item3"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item5"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_below="@+id/id_drama_other_item0"
+        android:layout_alignLeft="@+id/id_drama_other_item0"
+        android:nextFocusUp="@+id/id_drama_other_item0"
+        android:nextFocusRight="@+id/id_drama_other_item6"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="39dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item6"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item5"
+        android:layout_alignTop="@+id/id_drama_other_item5"
+        android:nextFocusUp="@+id/id_drama_other_item1"
+        android:nextFocusLeft="@+id/id_drama_other_item5"
+        android:nextFocusRight="@+id/id_drama_other_item7"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item7"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item6"
+        android:layout_alignTop="@+id/id_drama_other_item6"
+        android:nextFocusUp="@+id/id_drama_other_item2"
+        android:nextFocusLeft="@+id/id_drama_other_item6"
+        android:nextFocusRight="@+id/id_drama_other_item8"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item8"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item7"
+        android:layout_alignTop="@+id/id_drama_other_item7"
+        android:nextFocusUp="@+id/id_drama_other_item3"
+        android:nextFocusLeft="@+id/id_drama_other_item7"
+        android:nextFocusRight="@+id/id_drama_other_item9"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama
+        android:id="@+id/id_drama_other_item9"
+        android:layout_width="194dp"
+        android:layout_height="119dp"
+        android:layout_toRightOf="@+id/id_drama_other_item8"
+        android:layout_alignTop="@+id/id_drama_other_item8"
+        android:nextFocusUp="@+id/id_drama_other_item4"
+        android:nextFocusLeft="@+id/id_drama_other_item8"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SelectDrama>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.DotGroup 
+        android:id="@+id/id_drama_other_dot"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:visibility="visible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.DotGroup> 
+    
+</RelativeLayout>

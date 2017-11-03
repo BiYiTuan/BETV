@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1280dp" 
+    android:layout_height="720dp"
+    android:gravity="center">
+    
+    <RelativeLayout 
+        android:id="@+id/id_loading_page"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" 
+        android:visibility="visible"
+        android:gravity="center_vertical">
+        
+        <com.szgvtv.ead.app.taijietemplates.ui.view.ImageRotation
+        	android:id="@+id/id_loading_page_icon"
+        	android:layout_width="90dp"
+        	android:layout_height="90dp"
+        	android:layout_marginLeft="595dp"
+        	android:src="@drawable/waitting_big" >
+    	</com.szgvtv.ead.app.taijietemplates.ui.view.ImageRotation>
+    
+    	<TextView 
+        	android:id="@+id/id_loading_page_message"
+ 			android:layout_width="1280dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_below="@+id/id_loading_page_icon"
+ 			android:layout_marginLeft="0dp"
+ 			android:layout_marginTop="10dp"
+ 			android:gravity="center_horizontal"
+ 			android:textSize="@dimen/font_24"
+ 			android:textColor="@color/white"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="visible"
+ 			android:text="@string/loading_page"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/id_loading_page_fail"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp" 
+        android:visibility="invisible"
+        android:gravity="center_vertical">
+        
+        <ImageView
+        	android:id="@+id/id_loading_page_fail_icon"
+        	android:layout_width="90dp"
+        	android:layout_height="90dp"
+        	android:layout_marginLeft="595dp"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/tips_load_fail"
+        	android:contentDescription="@string/app_name" />
+    
+    	<TextView 
+        	android:id="@+id/id_loading_page_fail_message"
+ 			android:layout_width="1280dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_below="@+id/id_loading_page_fail_icon"
+ 			android:layout_marginLeft="0dp"
+ 			android:layout_marginTop="10dp"
+ 			android:gravity="center_horizontal"
+ 			android:textSize="@dimen/font_24"
+ 			android:textColor="@color/white"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="visible"
+ 			android:text="@string/loading_page_fail"/>
+    	
+    	<Button 
+            android:id="@+id/id_loading_page_fail_reload"
+            android:layout_width="178dp"
+ 			android:layout_height="70dp"
+ 			android:layout_below="@+id/id_loading_page_fail_message"
+ 			android:layout_marginLeft="551dp"
+ 			android:layout_marginTop="60dp"
+ 			android:textSize="24sp"
+            android:textColor="@color/white"
+        	android:background="@drawable/selector_button_background"
+        	android:text="@string/loading_page_reload"/>
+    </RelativeLayout>
+
+</RelativeLayout>

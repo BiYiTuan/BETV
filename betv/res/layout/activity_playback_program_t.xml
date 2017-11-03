@@ -1,0 +1,98 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="720dp"
+    android:background="@drawable/home_bg">
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage 
+        android:id="@+id/id_playback_program_loading_page"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage> 
+    
+    <ImageView  
+        android:id="@+id/id_playback_program_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="124dp"
+ 		android:layout_marginTop="24dp"
+        android:src="@drawable/playback_icon_d"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"/>
+    
+    <ImageView  
+        android:id="@+id/id_playback_program_icon_bg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="124dp"
+ 		android:layout_marginTop="24dp"
+        android:src="@drawable/playback_icon_bg"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:contentDescription="@string/app_name"/>
+    
+    <TextView 
+        android:id="@+id/id_playback_program_name"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="70dp"
+ 		android:layout_toRightOf="@+id/id_playback_program_icon"
+ 		android:layout_alignTop="@+id/id_playback_program_icon"
+ 		android:layout_alignBottom="@+id/id_playback_program_icon"
+ 		android:layout_marginLeft="20dp"
+ 		android:layout_marginTop="0dp"
+ 		android:gravity="center_vertical"
+ 		android:textSize="@dimen/font_32"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:visibility="visible"
+ 		android:text=""/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.HorizontalListView 
+        android:id="@+id/id_playback_program_hlistview"
+		android:layout_width="980dp"
+		android:layout_height="50dp"
+		android:layout_marginLeft="150dp"
+       	android:layout_marginTop="114dp">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.HorizontalListView>
+    
+    <ListView 
+        android:id="@+id/id_playback_program_listview"
+        android:layout_width="842dp"
+		android:layout_height="420dp"
+        android:layout_marginLeft="219dp"
+        android:layout_marginTop="198dp"
+		android:focusable="true"
+		android:listSelector="@drawable/selector_program" 
+		android:divider="@color/transparent"
+		android:dividerHeight="1dp"
+		android:scrollbars="none"
+		android:visibility="visible"/>
+        <!-- android:background="@drawable/playback_list_bg_t" -->
+    
+    <TextView  
+        android:id="@+id/id_playback_program_item"
+        android:layout_width="1280dp"
+        android:layout_height="wrap_content"
+ 		android:layout_marginTop="654dp"
+ 		android:textSize="@dimen/font_25"
+ 		android:textColor="@color/white"
+ 		android:gravity="center_horizontal"
+        android:visibility="visible"/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.NoContent 
+        android:id="@+id/id_playback_program_no_content"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.NoContent> 
+
+</RelativeLayout>

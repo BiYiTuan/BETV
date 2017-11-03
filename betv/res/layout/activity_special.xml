@@ -1,0 +1,162 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg">
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage 
+        android:id="@+id/id_special_loading_page"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage>  
+    
+    <TextView 
+        android:id="@+id/id_special_name"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_marginLeft="130dp"
+ 		android:layout_marginTop="40dp"
+ 		android:gravity="left"
+ 		android:textSize="@dimen/font_32"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:text="@string/home_special"/>
+    
+    <ImageView  
+        android:id="@+id/id_special_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/focus"
+        android:visibility="invisible"
+        android:scaleType="fitXY"/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem
+        android:id="@+id/id_special_item0"
+        android:layout_width="323dp"
+        android:layout_height="206dp"
+        android:nextFocusDown="@+id/id_special_item3"
+        android:nextFocusRight="@+id/id_special_item1"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="130dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem
+        android:id="@+id/id_special_item1"
+        android:layout_width="323dp"
+        android:layout_height="206dp"
+        android:layout_toRightOf="@+id/id_special_item0"
+        android:layout_alignTop="@+id/id_special_item0"
+        android:nextFocusDown="@+id/id_special_item4"
+        android:nextFocusLeft="@+id/id_special_item0"
+        android:nextFocusRight="@+id/id_special_item2"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem
+        android:id="@+id/id_special_item2"
+        android:layout_width="323dp"
+        android:layout_height="206dp"
+        android:layout_toRightOf="@+id/id_special_item1"
+        android:layout_alignTop="@+id/id_special_item1"
+        android:nextFocusDown="@+id/id_special_item5"
+        android:nextFocusLeft="@+id/id_special_item1"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem
+        android:id="@+id/id_special_item3"
+        android:layout_width="323dp"
+        android:layout_height="206dp"
+        android:layout_below="@+id/id_special_item0"
+        android:layout_alignLeft="@+id/id_special_item0"
+        android:nextFocusUp="@+id/id_special_item0"
+        android:nextFocusRight="@+id/id_special_item4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="14dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem>
+    
+    <ImageView  
+        android:id="@+id/id_special_item3_inflection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_special_item3"
+        android:layout_alignLeft="@+id/id_special_item3"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        android:scaleType="fitXY"/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem
+        android:id="@+id/id_special_item4"
+        android:layout_width="323dp"
+        android:layout_height="206dp"
+        android:layout_toRightOf="@+id/id_special_item3"
+        android:layout_alignTop="@+id/id_special_item3"
+        android:nextFocusUp="@+id/id_special_item1"
+        android:nextFocusLeft="@+id/id_special_item3"
+        android:nextFocusRight="@+id/id_special_item5"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem>
+    
+    <ImageView  
+        android:id="@+id/id_special_item4_inflection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_special_item4"
+        android:layout_alignLeft="@+id/id_special_item4"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        android:scaleType="fitXY"/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem
+        android:id="@+id/id_special_item5"
+        android:layout_width="323dp"
+        android:layout_height="206dp"
+        android:layout_toRightOf="@+id/id_special_item4"
+        android:layout_alignTop="@+id/id_special_item4"
+        android:nextFocusUp="@+id/id_special_item2"
+        android:nextFocusLeft="@+id/id_special_item4"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.SpecialListItem>
+    
+    <ImageView  
+        android:id="@+id/id_special_item5_inflection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id_special_item5"
+        android:layout_alignLeft="@+id/id_special_item5"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="invisible"
+        android:scaleType="fitXY"/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.DotGroup 
+        android:id="@+id/id_special_dot"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+        android:visibility="visible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.DotGroup> 
+
+</RelativeLayout>

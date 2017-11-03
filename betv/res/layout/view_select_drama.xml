@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="194dp" 
+    android:layout_height="119dp" >
+    
+    <ImageView 
+        android:id="@+id/id_select_drama_icon"
+        android:layout_width="194dp" 
+    	android:layout_height="119dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/drama_d"
+        android:visibility="visible"
+        android:contentDescription="@string/app_name"/>
+    
+    <RelativeLayout
+        android:id="@+id/id_select_drama_name_r"
+        android:layout_width="194dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="86dp"
+        android:background="@drawable/drama_b">
+        
+        <TextView 
+        	android:id="@+id/id_select_drama_name"
+ 			android:layout_width="194dp"
+ 			android:layout_height="33dp"
+ 			android:layout_marginLeft="0dp"
+ 			android:layout_marginTop="0dp"
+ 			android:paddingLeft="3dp"
+ 			android:paddingRight="3dp"
+ 			android:gravity="center"
+ 			android:textSize="@dimen/font_20"
+ 			android:textColor="@color/white"
+ 			android:singleLine="true"
+ 			android:ellipsize="marquee"
+ 			android:marqueeRepeatLimit="marquee_forever"
+ 			android:visibility="visible"
+ 			android:text=""/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>
+

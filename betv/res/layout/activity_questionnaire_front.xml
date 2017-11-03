@@ -1,0 +1,70 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg">
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage 
+        android:id="@+id/id_questionnaire_front_loading_page"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage> 
+    
+    <TextView 
+        android:id="@+id/id_questionnaire_front_name"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_marginLeft="127dp"
+ 		android:layout_marginTop="35dp"
+ 		android:textStyle="bold"
+ 		android:textSize="@dimen/font_28"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:text="@string/home_questionnaire"/>
+    
+    <RelativeLayout
+        android:id="@+id/id_questionnaire_front"
+        android:layout_width="1026dp"
+        android:layout_height="386dp"
+        android:layout_alignLeft="@+id/id_questionnaire_front_name"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="120dp" 
+        android:background="@drawable/questionnaire_bg">
+        
+        <TextView
+        	android:id="@+id/id_questionnaire_front_message"
+        	android:layout_width="926dp"
+        	android:layout_height="286dp"
+        	android:layout_marginLeft="50dp"
+        	android:layout_marginTop="50dp"
+        	android:gravity="top"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/font_22" 
+        	android:singleLine="false"
+        	android:ellipsize="end"
+        	android:maxLines="7"
+        	android:lineSpacingExtra="16dp"
+        	android:text="问卷调查是社会调查引的一种数据收集手段。当一个研究者想通过社会调查来研究一个现象时比如什么因素影响顾客满意度，他可以用问卷调查收集数据，也可以用访谈或其它方式收集数据。问卷调查假定研究者已经确定所要问的问题。这些问题被打印在问卷上，编制成书面的问题表格，交由调查对象填写，然后收回整理分析，从而得出结论。问卷调查是社会调查引的一种数据收集手段。当一个研究者想通过社会调查来研究一个现象时比如什么因素影响顾客满意度，他可以用问卷调查收集数据，也可以用访谈或其它方式收集数据。问卷调查假定研究者已经确定所要问的问题。这些问题被打印在问卷上，编制成书面的问题表格，交由调查对象填写，然后收回整理分析，从而得出结论。"/>
+            
+    </RelativeLayout>
+	
+	<Button 
+        android:id="@+id/id_questionnaire_front_start"
+ 		android:layout_width="178dp"
+ 		android:layout_height="70dp"
+ 		android:layout_marginLeft="551dp"
+ 		android:layout_marginTop="549dp"
+ 		android:gravity="center"
+ 		android:textSize="@dimen/font_28"
+ 		android:textColor="@color/white"
+ 		android:background="@drawable/selector_button_background"
+ 		android:text="@string/questionnaire_start"
+ 		android:visibility="visible"/>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BETV Plus</string>
+    <string name="action_settings">Settings</string>
+   
+    <string name="home_tv">电视剧</string>
+    <string name="home_moive">电影</string>
+    <string name="home_live">直播</string>
+    <string name="home_special">专题</string>
+    <string name="home_playback">回放</string>
+    <string name="home_search">搜索</string>
+    <string name="home_history">最近播放</string>
+    <string name="home_favorite">我的收藏</string>
+    <string name="home_questionnaire">问卷调查</string>
+    <string name="home_variety">综艺</string>
+    <string name="playback_relook">回看</string>
+    
+    <string name="loading_page">努力加载中, 请稍后…</string>
+    <string name="loading_page_fail">加载失败, 请重试</string>
+    <string name="loading_page_reload">重新加载</string>
+    <string name="loading_video">正在加载</string> 
+    <string name="loading_video_buffer">缓冲</string>
+    
+    <string name="view_volume_value">音量大小</string>
+    <string name="view_palyback_relook">正在回看</string>
+    <string name="view_load_speed">下载速度</string>
+    <string name="view_playing">正在播放</string>
+    
+    <string name="search_hint">请输入关键字</string>
+    <string name="search_pre">共</string>
+    <string name="search_suf">个</string>
+    
+    <string name="vod_prefix_all">全</string>
+    <string name="vod_prefix_update">更新至</string>
+    <string name="vod_suffix">集</string>
+    
+    <string name="no_result">没有查找到相关视频</string>
+    <string name="no_history">暂无播放记录</string>
+    <string name="no_favorite">暂无收藏</string>
+    <string name="no_program">暂无节目内容</string>
+    <string name="clear_all">清空全部</string>
+    
+    <string name="detail_director">导演 : </string>
+    <string name="detail_star">主演 : </string>
+    <string name="detail_time">上映 : </string>
+    <string name="detail_breif">简介 : </string>
+    <string name="detail_play">播 放</string>
+    <string name="detail_favorite">收 藏</string>
+    <string name="detail_favorited">已收藏</string>
+    <string name="detail_selection">选 集</string>
+    <string name="detail_all">全</string>
+    <string name="detail_update">更新至</string>
+    <string name="detail_drama_suffix">集</string>
+    <string name="detail_drama_prefix">第</string>
+    
+    <string name="questionnaire_start">立即参加</string>
+    <string name="questionnaire_next">下一题</string>
+    <string name="questionnaire_send">提交</string>
+    <string name="questionnaire_choices">多选</string>
+    
+    <string name="live_channel_list">频道列表</string>
+    <string name="live_playing">正在播放</string>
+    <string name="live_goto_play">即将播放</string>
+    <string name="live_total_prefix">共</string>
+    <string name="live_total_suffix">台</string>
+    
+    <string name="toast_no_keyword">请输入关键字</string>
+    <string name="toast_send_fail">提交失败</string>
+    <string name="toast_send_success">提交成功</string>
+    <string name="toast_thanks">谢谢您的参与</string>
+    <string name="toast_select_answer">请选择答案选项</string>
+    <string name="toast_network_normal">网络异常</string>
+    <string name="toast_favorite_failed">收藏失败</string>
+    <string name="toast_favorite_successed">收藏成功</string>
+    <string name="toast_cancel_favorite_successed">取消收藏成功</string>
+    <string name="toast_cancel_favorite_failed">取消收藏失败</string>
+    <string name="toast_want_to_exit_app">再按一次将退出应用</string>
+    <string name="toast_want_to_exit_play">再按一次将退出播放</string>
+    
+    <string name="dialog_sure">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_yes">是</string>
+    <string name="dialog_no">否</string>
+    <string name="dialog_goto_favorite">继续收藏</string>
+    <string name="dialog_full">收藏已满, 选择 "继续收藏" 将替换已收藏的内容, 是否继续 ? </string>
+    <string name="dialog_clear_all">确定清空全部记录?</string>
+    <string name="dialog_exit_questionnaire">是否退出问卷调查?</string>
+    <string name="dialog_exit_app">确定退出应用?</string>
+    <string name="dialog_load_failed">视频加载失败, 请重试!</string>
+    <string name="dialog_reload">重新加载</string>
+    <string name="dialog_history">上次播放记录</string>
+    <string name="dialog_continue_play">是否续播?</string>
+    <string name="dialog_error_code">错误码</string>
+    
+</resources>

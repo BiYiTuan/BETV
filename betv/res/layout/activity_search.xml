@@ -1,0 +1,97 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg">
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage 
+        android:id="@+id/id_search_loading_page"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage> 
+    
+    <TextView 
+        android:id="@+id/id_search_name"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_marginLeft="122dp"
+ 		android:layout_marginTop="35dp"
+ 		android:textStyle="bold"
+ 		android:textSize="@dimen/font_28"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:text="@string/home_search"/>
+    
+    <EditText
+    	android:id="@+id/id_search_edit"
+    	android:layout_width="840dp"
+    	android:layout_height="100dp" 
+    	android:layout_marginLeft="106dp"
+        android:layout_marginTop="100dp"
+	    android:paddingLeft="30dp"
+	    android:paddingRight="27dp"
+        android:clickable="true"
+        android:singleLine="true"
+   	    android:textSize="@dimen/font_24"
+    	android:textColor="@color/black"
+    	android:hint="@string/search_hint" 
+    	android:textColorHint="@color/light_black"
+    	android:background="@drawable/selector_search_edit"
+    	android:imeOptions="actionUnspecified"/>
+    
+    <RelativeLayout
+        android:id="@+id/id_search_button"
+        android:layout_width="183dp"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/id_search_edit"
+        android:layout_alignTop="@+id/id_search_edit"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp" 
+        android:focusable="true"
+        android:background="@drawable/selector_search_button">
+        
+        <ImageView
+        	android:id="@+id/id_search_button_icon"
+        	android:layout_width="52dp"
+        	android:layout_height="52dp"
+        	android:layout_marginLeft="21dp"
+        	android:layout_marginTop="9dp"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/search_icon"
+        	android:contentDescription="@string/app_name" />
+        
+        <TextView
+        	android:id="@+id/id_search_button_name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="70dp"
+        	android:layout_toRightOf="@+id/id_search_button_icon"
+        	android:layout_marginLeft="20dp"
+        	android:layout_marginTop="0dp"
+        	android:gravity="left|center_vertical"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/font_26" 
+        	android:text="@string/home_search"/>
+            
+    </RelativeLayout>
+		
+	<GridView 
+        android:id="@+id/id_search_hotword"
+        android:layout_width="1036dp"
+        android:layout_height="390dp"
+        android:layout_marginLeft="122dp"
+        android:layout_marginTop="222dp"
+        android:verticalSpacing="10dp"  
+        android:horizontalSpacing="23dp"  
+        android:numColumns="3"
+        android:focusable="true"
+        android:scrollbars="none"
+        android:listSelector="@color/transparent"/>
+
+</RelativeLayout>

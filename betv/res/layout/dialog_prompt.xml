@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_prompt_bg">
+    
+    <RelativeLayout
+        android:id="@+id/id_dialog_prompt"
+        android:layout_width="473dp"
+        android:layout_height="176dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+        	
+        <ImageView 
+        	android:id="@+id/id_dialog_prompt_icon"
+        	android:layout_width="76dp"
+        	android:layout_height="76dp"
+        	android:layout_marginTop="50dp"
+        	android:scaleType="fitXY"
+        	android:visibility="gone"
+        	android:src="@drawable/tips_question"
+        	android:contentDescription="@string/app_name"/>
+        
+        <TextView 
+       		android:id="@+id/id_dialog_prompt_info"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="176dp"
+ 			android:paddingTop="3dp"
+ 			android:layout_toRightOf="@+id/id_dialog_prompt_icon"
+ 			android:layout_marginLeft="12dp"
+ 			android:gravity="center_vertical"
+ 			android:textSize="@dimen/font_27"
+ 			android:textColor="@color/white"
+ 			android:singleLine="false"
+ 			android:ellipsize="end"
+ 			android:maxLines="4"
+ 			android:visibility="visible"
+ 			android:lineSpacingExtra="5dp"
+ 			android:text=""/>
+        
+    </RelativeLayout>
+    
+    <Button
+        android:id="@+id/id_dialog_prompt_sure"
+        android:layout_width="178dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="103dp"
+        android:layout_marginTop="206dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_24" 
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@drawable/selector_button_background"/>
+    
+    <Button
+        android:id="@+id/id_dialog_prompt_cancel"
+        android:layout_width="178dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/id_dialog_prompt_sure"
+        android:layout_alignBottom="@+id/id_dialog_prompt_sure"
+        android:layout_toRightOf="@+id/id_dialog_prompt_sure"
+        android:layout_marginLeft="12dp"
+        android:gravity="center"
+        android:textSize="@dimen/font_24" 
+        android:text=""
+        android:textColor="@color/white"
+        android:background="@drawable/selector_button_background"/>
+
+</RelativeLayout>

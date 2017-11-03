@@ -1,0 +1,201 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/home_bg">
+    
+    <TextView 
+        android:id="@+id/id_favorite_name"
+ 		android:layout_width="wrap_content"
+ 		android:layout_height="wrap_content"
+ 		android:layout_marginLeft="130dp"
+ 		android:layout_marginTop="40dp"
+ 		android:gravity="left"
+ 		android:textSize="@dimen/font_32"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:text="@string/home_favorite"/>
+    
+    <RelativeLayout
+        android:id="@+id/id_favorite_clear"
+        android:layout_width="160dp"
+        android:layout_height="62dp"
+        android:nextFocusUp="@+id/id_favorite_clear"
+        android:nextFocusDown="@+id/id_favorite_item0"
+        android:nextFocusLeft="@+id/id_favorite_clear"
+        android:nextFocusRight="@+id/id_favorite_clear"
+        android:layout_marginLeft="1012dp"
+        android:layout_marginTop="30dp" 
+        android:focusable="true"
+        android:background="@drawable/selector_clear_background">
+        
+        <ImageView
+        	android:id="@+id/id_favorite_clear_icon"
+        	android:layout_width="38dp"
+        	android:layout_height="42dp"
+        	android:layout_marginLeft="18dp"
+        	android:layout_marginTop="10dp"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/clear_icon"
+        	android:contentDescription="@string/app_name" />
+        
+        <TextView
+        	android:id="@+id/id_favorite_clear_name"
+        	android:layout_width="wrap_content"
+        	android:layout_height="62dp"
+        	android:layout_toRightOf="@+id/id_favorite_clear_icon"
+        	android:layout_marginLeft="8dp"
+        	android:layout_marginTop="0dp"
+        	android:gravity="left|center_vertical"
+        	android:textColor="@color/white"
+        	android:textSize="@dimen/font_20" 
+        	android:singleLine="true"
+ 			android:ellipsize="end"
+        	android:text="@string/clear_all"/>
+        
+    </RelativeLayout>
+    
+    <ImageView  
+        android:id="@+id/id_favorite_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/focus"
+        android:visibility="invisible"
+        android:scaleType="fitXY"/>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item0"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:nextFocusUp="@+id/id_favorite_clear"
+        android:nextFocusDown="@+id/id_favorite_item4"
+        android:nextFocusRight="@+id/id_favorite_item1"
+        android:layout_marginLeft="154dp"
+        android:layout_marginTop="130dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item1"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:layout_toRightOf="@+id/id_favorite_item0"
+        android:layout_alignTop="@+id/id_favorite_item0"
+        android:nextFocusUp="@+id/id_favorite_clear"
+        android:nextFocusDown="@+id/id_favorite_item5"
+        android:nextFocusLeft="@+id/id_favorite_item0"
+        android:nextFocusRight="@+id/id_favorite_item2"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item2"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:layout_toRightOf="@+id/id_favorite_item1"
+        android:layout_alignTop="@+id/id_favorite_item1"
+        android:nextFocusUp="@+id/id_favorite_clear"
+        android:nextFocusDown="@+id/id_favorite_item6"
+        android:nextFocusLeft="@+id/id_favorite_item1"
+        android:nextFocusRight="@+id/id_favorite_item3"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item3"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:layout_toRightOf="@+id/id_favorite_item2"
+        android:layout_alignTop="@+id/id_favorite_item2"
+        android:nextFocusUp="@+id/id_favorite_clear"
+        android:nextFocusDown="@+id/id_favorite_item7"
+        android:nextFocusLeft="@+id/id_favorite_item2"
+        android:nextFocusRight="@+id/id_favorite_item3"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item4"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:layout_below="@+id/id_favorite_item0"
+        android:layout_alignLeft="@+id/id_favorite_item0"
+        android:nextFocusUp="@+id/id_favorite_item0"
+        android:nextFocusRight="@+id/id_favorite_item5"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="32dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item5"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:layout_toRightOf="@+id/id_favorite_item4"
+        android:layout_alignTop="@+id/id_favorite_item4"
+        android:nextFocusUp="@+id/id_favorite_item1"
+        android:nextFocusLeft="@+id/id_favorite_item4"
+        android:nextFocusRight="@+id/id_favorite_item6"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item6"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:layout_toRightOf="@+id/id_favorite_item5"
+        android:layout_alignTop="@+id/id_favorite_item5"
+        android:nextFocusUp="@+id/id_favorite_item2"
+        android:nextFocusLeft="@+id/id_favorite_item5"
+        android:nextFocusRight="@+id/id_favorite_item7"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem
+        android:id="@+id/id_favorite_item7"
+        android:layout_width="155dp"
+        android:layout_height="214dp"
+        android:layout_toRightOf="@+id/id_favorite_item6"
+        android:layout_alignTop="@+id/id_favorite_item6"
+        android:nextFocusUp="@+id/id_favorite_item3"
+        android:nextFocusLeft="@+id/id_favorite_item6"
+        android:nextFocusRight="@+id/id_favorite_item7"
+        android:layout_marginLeft="49dp"
+        android:layout_marginTop="0dp"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    <ImageView
+        android:id="@+id/id_favorite_ad"
+        android:layout_width="155dp"
+        android:layout_height="461dp"
+        android:layout_marginLeft="973dp"
+        android:layout_marginTop="132dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ad1_d"
+        android:contentDescription="@string/app_name" />
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.NoContent 
+        android:id="@+id/id_favorite_no_content"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.NoContent> 
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="140dp"
+    android:layout_height="140dp"
+    android:background="@drawable/home_search_bg" >
+    
+    <TextView
+        android:id="@+id/id_search_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_26" 
+        android:text="@string/home_search"/>
+            	
+    <ImageView
+        android:id="@+id/id_search_icon"
+        android:layout_width="98dp"
+        android:layout_height="84dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="56dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_search_icon"
+        android:contentDescription="@string/app_name" />
+           
+</RelativeLayout>      	

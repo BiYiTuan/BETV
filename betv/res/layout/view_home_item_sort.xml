@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="290dp"
+    android:layout_height="216dp" >
+    
+    <ImageView
+        android:id="@+id/id_sort_bg"
+        android:layout_width="290dp"
+        android:layout_height="216dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:contentDescription="@string/app_name" />
+    
+    <TextView
+        android:id="@+id/id_sort_name"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_26" 
+        android:singleLine="false"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text=""/>
+            	
+    <ImageView
+        android:id="@+id/id_sort_icon"
+        android:layout_width="138dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="116dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/home_sort_d"
+        android:contentDescription="@string/app_name" />
+           
+</RelativeLayout>      	

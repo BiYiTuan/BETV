@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp" 
+    android:layout_height="wrap_content">
+    
+    <ImageView 
+        android:id="@+id/id_dot_icon1"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/unfocus"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"/> 
+        
+    <ImageView 
+        android:id="@+id/id_dot_icon2"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/unfocus"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"/> 
+        
+    <ImageView 
+        android:id="@+id/id_dot_icon3"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/unfocus"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"/> 
+        
+    <ImageView 
+        android:id="@+id/id_dot_icon4"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/unfocus"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"/> 
+        
+    <ImageView
+        android:id="@+id/id_dot_icon5"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/unfocus"
+        android:visibility="gone"
+        android:contentDescription="@string/app_name"/> 
+    
+    <TextView 
+        android:id="@+id/id_dot_page"
+ 		android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"
+ 		android:gravity="center_horizontal"
+ 		android:textSize="@dimen/font_28"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:visibility="gone"
+ 		android:text=""/>
+
+</RelativeLayout>

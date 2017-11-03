@@ -1,0 +1,178 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg">
+    
+    <com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage 
+    	android:id="@+id/id_special_video_loading_page"
+		android:layout_width="1280dp"
+		android:layout_height="720dp"
+		android:layout_marginLeft="0dp"
+ 		android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:focusable="true">
+    </com.szgvtv.ead.app.taijietemplates.ui.view.LoadingPage>  
+    
+    <ImageView  
+        android:id="@+id/id_special_video_poster"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:contentDescription="@string/app_name"
+        android:visibility="visible"
+        android:scaleType="fitXY"/>
+    		
+    <RelativeLayout
+        android:id="@+id/id_special_video_info"
+        android:layout_width="992dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="106dp" >
+        
+        <TextView 
+        	android:id="@+id/id_special_video_name"
+ 			android:layout_width="992dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_marginLeft="0dp"
+ 			android:layout_marginTop="0dp"
+ 			android:paddingLeft="45dp"
+ 			android:gravity="left"
+ 			android:textSize="@dimen/font_30"
+ 			android:textColor="@color/white"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:visibility="invisible"
+ 			android:text=""/>
+    
+    	<TextView 
+        	android:id="@+id/id_special_video_brief"
+ 			android:layout_width="992dp"
+ 			android:layout_height="wrap_content"
+ 			android:layout_below="@+id/id_special_video_name"
+ 			android:layout_alignLeft="@+id/id_special_video_name"
+ 			android:layout_marginLeft="0dp"
+ 			android:layout_marginTop="5dp"
+ 			android:lineSpacingExtra="5dp"
+ 			android:gravity="left"
+ 			android:textSize="@dimen/font_21"
+ 			android:textColor="@color/white"
+ 			android:singleLine="false"
+ 			android:ellipsize="end"
+ 			android:maxLines="8"
+ 			android:visibility="invisible"
+ 			android:text=""/>
+            
+    </RelativeLayout> 
+    
+    <HorizontalScrollView
+        android:id="@+id/id_special_video_hs"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+        
+        <RelativeLayout
+            android:id="@+id/id_special_video"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="144dp"
+        	android:paddingRight="144dp"
+        	android:background="@android:color/transparent">
+            
+        	<ImageView  
+        		android:id="@+id/id_special_video_focus"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:contentDescription="@string/app_name"
+        		android:src="@drawable/focus"
+        		android:visibility="invisible"
+        		android:scaleType="fitXY"/>
+            
+           <com.szgvtv.ead.app.taijietemplates.ui.view.VodItem 
+        		android:id="@+id/id_special_video_item0"
+        		android:layout_width="155dp"
+        		android:layout_height="214dp"
+        		android:nextFocusLeft="@+id/id_special_video_item0"
+        		android:nextFocusRight="@+id/id_special_video_item1"
+        		android:layout_marginLeft="10dp"
+        		android:layout_marginTop="447dp"
+        		android:focusable="true">
+    		</com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    		<com.szgvtv.ead.app.taijietemplates.ui.view.VodItem 
+        		android:id="@+id/id_special_video_item1"
+        		android:layout_toRightOf="@+id/id_special_video_item0"
+        		android:layout_width="155dp"
+        		android:layout_height="214dp"
+        		android:nextFocusLeft="@+id/id_special_video_item0"
+        		android:nextFocusRight="@+id/id_special_video_item2"
+        		android:layout_marginLeft="52dp"
+        		android:layout_marginTop="447dp"
+        		android:focusable="true">
+    		</com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    		<com.szgvtv.ead.app.taijietemplates.ui.view.VodItem 
+        		android:id="@+id/id_special_video_item2"
+        		android:layout_toRightOf="@+id/id_special_video_item1"
+        		android:layout_width="155dp"
+        		android:layout_height="214dp"
+        		android:nextFocusLeft="@+id/id_special_video_item1"
+        		android:nextFocusRight="@+id/id_special_video_item3"
+        		android:layout_marginLeft="52dp"
+        		android:layout_marginTop="447dp"
+        		android:focusable="true">
+    		</com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    		<com.szgvtv.ead.app.taijietemplates.ui.view.VodItem 
+        		android:id="@+id/id_special_video_item3"
+        		android:layout_toRightOf="@+id/id_special_video_item2"
+        		android:layout_width="155dp"
+        		android:layout_height="214dp"
+        		android:nextFocusLeft="@+id/id_special_video_item2"
+        		android:nextFocusRight="@+id/id_special_video_item4"
+        		android:layout_marginLeft="52dp"
+        		android:layout_marginTop="447dp"
+        		android:focusable="true">
+    		</com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    		<com.szgvtv.ead.app.taijietemplates.ui.view.VodItem 
+        		android:id="@+id/id_special_video_item4"
+        		android:layout_toRightOf="@+id/id_special_video_item3"
+        		android:layout_width="155dp"
+        		android:layout_height="214dp"
+        		android:nextFocusLeft="@+id/id_special_video_item3"
+        		android:nextFocusRight="@+id/id_special_video_item5"
+        		android:layout_marginLeft="52dp"
+        		android:layout_marginTop="447dp"
+        		android:focusable="true">
+    		</com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    		<com.szgvtv.ead.app.taijietemplates.ui.view.VodItem 
+        		android:id="@+id/id_special_video_item5"
+        		android:layout_toRightOf="@+id/id_special_video_item4"
+        		android:layout_width="155dp"
+        		android:layout_height="214dp"
+        		android:nextFocusLeft="@+id/id_special_video_item4"
+        		android:nextFocusRight="@+id/id_special_video_item6"
+        		android:layout_marginLeft="52dp"
+        		android:layout_marginTop="447dp"
+        		android:focusable="true">
+    		</com.szgvtv.ead.app.taijietemplates.ui.view.VodItem>
+    
+    		<com.szgvtv.ead.app.taijietemplates.ui.view.VodItem 
+        		android:id="@+id/id_special_video_item6"
+        		android:layout_toRightOf="@+id/id_special_video_item5"
+        		android:layout_width="155dp"
+        		android:layout_height="214dp"
+        		android:nextFocusLeft="@+id/id_special_video_item5"
+        		android:nextFocusRight="@+id/id_special_video_item6"
+        		android:layout_marginLeft="52dp"
+        		android:layout_marginTop="447dp"
+        		android:focusable="true">
+    		</com.szgvtv.ead.app.taijietemplates.ui.view.VodItem> 
+        	
+        </RelativeLayout>
+        
+    </HorizontalScrollView>
+    		
+</RelativeLayout>

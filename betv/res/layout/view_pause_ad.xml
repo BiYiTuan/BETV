@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="1068dp"
+	android:layout_height="488dp">
+    
+    <ImageView
+        android:id="@+id/id_pause_ad_bg"
+        android:layout_width="1068dp"
+		android:layout_height="488dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:src="@drawable/pause_ad_bg"
+        android:contentDescription="@string/app_name"/>
+    
+    <ImageView
+        android:id="@+id/id_pause_ad_icon"
+        android:layout_width="1068dp"
+        android:layout_height="488dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:visibility="visible"
+        android:src="@drawable/pause_ad_d"
+        android:contentDescription="@string/app_name"/>
+    
+    <TextView 
+        android:id="@+id/id_pause_ad_countdown"
+ 		android:layout_width="50dp"
+ 		android:layout_height="26dp"
+ 		android:layout_marginLeft="950dp"
+ 		android:layout_marginTop="20dp"
+ 		android:gravity="center"
+ 		android:textSize="@dimen/font_16"
+ 		android:textColor="@color/white"
+ 		android:singleLine="true"
+ 		android:ellipsize="end"
+ 		android:visibility="gone"
+ 		android:text=""
+ 		android:background="@drawable/pause_countdown_bg"/>
+
+</RelativeLayout>
+

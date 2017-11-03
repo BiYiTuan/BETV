@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="580dp" 
+    android:layout_height="108dp"
+    android:background="@drawable/dialog_questionnaire_bg">
+    
+    <RelativeLayout
+        android:id="@+id/id_dialog_questionnaire"
+        android:layout_width="580dp" 
+    	android:layout_height="108dp"
+        android:layout_marginLeft="0dp"
+        android:gravity="center_horizontal"
+        android:visibility="visible">
+        	
+        <ImageView 
+        	android:id="@+id/id_dialog_questionnaire_icon"
+        	android:layout_width="60dp"
+        	android:layout_height="60dp"
+        	android:layout_marginTop="24dp"
+        	android:scaleType="fitXY"
+        	android:src="@drawable/dialog_questionnaire_icon"
+        	android:visibility="visible"
+        	android:contentDescription="@string/app_name"/>
+        
+        <TextView 
+       		android:id="@+id/id_dialog_questionnaire_text"
+ 			android:layout_width="wrap_content"
+ 			android:layout_height="108dp"
+ 			android:layout_toRightOf="@+id/id_dialog_questionnaire_icon"
+ 			android:layout_marginLeft="10dp"
+ 			android:gravity="center_vertical"
+ 			android:textSize="@dimen/font_24"
+ 			android:textColor="@color/white"
+ 			android:clickable="true"
+ 			android:focusable="true"
+ 			android:singleLine="true"
+ 			android:ellipsize="end"
+ 			android:text="@string/home_questionnaire"/>
+        
+        </RelativeLayout>
+
+</RelativeLayout>

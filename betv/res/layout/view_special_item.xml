@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="323dp"
+    android:layout_height="206dp" >
+            	
+    <ImageView
+        android:id="@+id/id_special_icon"
+        android:layout_width="323dp"
+        android:layout_height="206dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/special_d"
+        android:contentDescription="@string/app_name" />
+                
+</RelativeLayout>      	
